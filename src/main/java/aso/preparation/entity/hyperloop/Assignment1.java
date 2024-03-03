@@ -1,5 +1,7 @@
-package aso.preparation;
+package aso.preparation.entity.hyperloop;
 
+import aso.preparation.entity.Line;
+import aso.preparation.entity.Point;
 import lombok.Data;
 
 import java.util.List;

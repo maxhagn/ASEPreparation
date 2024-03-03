@@ -1,4 +1,4 @@
-package aso.preparation;
+package aso.preparation.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

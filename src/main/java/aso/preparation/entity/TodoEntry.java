@@ -1,4 +1,4 @@
-package aso.preparation;
+package aso.preparation.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

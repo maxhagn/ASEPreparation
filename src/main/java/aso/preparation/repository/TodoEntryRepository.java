@@ -1,5 +1,6 @@
-package aso.preparation;
+package aso.preparation.repository;
 
+import aso.preparation.entity.TodoEntry;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

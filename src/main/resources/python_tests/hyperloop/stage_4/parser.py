@@ -3,7 +3,7 @@ import requests
 import json
 from urllib import request, parse
 
-folder_path = '.'
+folder_path = ''
 url = 'http://localhost:8080/api/solution4'
 
 def parse_file_to_json(file_path):

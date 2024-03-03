@@ -1,5 +1,11 @@
-package aso.preparation;
+package aso.preparation.service;
 
+import aso.preparation.entity.*;
+import aso.preparation.entity.hyperloop.Assignment1;
+import aso.preparation.entity.hyperloop.Assignment2;
+import aso.preparation.entity.hyperloop.Assignment3;
+import aso.preparation.entity.hyperloop.Assignment4;
+import aso.preparation.repository.PointRepository;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
@@ -7,29 +13,11 @@ import java.util.List;
 
 @org.springframework.stereotype.Service
 @Slf4j
-public class Service {
-
-    private final TodoListRepository todoListRepository;
-    private final TodoEntryRepository todoEntryRepository;
+public class HyperloopService {
     private final PointRepository pointRepository;
 
-    public Service(TodoListRepository todoListRepository, TodoEntryRepository todoEntryRepository,
-                   PointRepository pointRepository) {
-        this.todoListRepository = todoListRepository;
-        this.todoEntryRepository = todoEntryRepository;
+    public HyperloopService(PointRepository pointRepository) {
         this.pointRepository = pointRepository;
-    }
-
-    public List<TodoList> findAll() {
-        return todoListRepository.findAll();
-    }
-
-    public List<TodoEntry> findEntriesForTodoListId(Long id) {
-        return todoEntryRepository.findByTodoListId(id);
-    }
-
-    public TodoList save(TodoList beispiel) {
-        return todoListRepository.save(beispiel);
     }
 
     public List<Point> generateSolution1(Assignment1 assignment1) {
